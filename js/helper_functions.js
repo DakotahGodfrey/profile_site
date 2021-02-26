@@ -34,3 +34,46 @@ export function slideSideNavOut(){
 
 }
 
+
+
+export function pop(e){
+    for (let i = 0; i < 50; i++) {
+        createParticle(e.clientX, e.clientY);
+    }
+}
+
+function createParticle(x, y){
+    const particle = document.createElement('particle');
+    particle.classList.add('particle')
+    document.body.appendChild(particle);
+
+    const width = 15;
+    const height = 5;
+
+    particle.style.width = `${width}px`;
+    particle.style.height = `${height}px`;
+    particle.style.backgroundColor = `hsl(${Math.random()*360}, 70%, ${Math.random()*40 + 30}%)`
+
+    const destinationX = x + (Math.random()-0.5) * 2 * 200;
+    const destinationY = y + (Math.random()-0.5) * 2 * 200;
+    
+
+    const animation = particle.animate([
+        {
+            transform: `translate(${x-width/2}px, ${y-(height/2)}px) rotate(${Math.random()*45}deg)`,
+            opacity: 1
+        },
+        {
+            transform: `translate(${destinationX}px, ${destinationY}px)`,
+            opacity: 0
+        }
+    ], {
+        duration: 1000+Math.random()*1000, 
+        easing: 'cubic-bezier(0, .9, .57, 1)', 
+        delay: Math.random() * 200
+    });
+    animation.onfinish = () => {
+        particle.remove();
+    }
+
+}

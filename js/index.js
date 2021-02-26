@@ -1,11 +1,9 @@
 import * as helperFunction from './helper_functions.js';
 import * as typeWriter from './typewriter.js';
-const sideBar = document.querySelector('.side-bar');
 const openNavBtn = document.getElementById('open-sidebar');
-const textSpan = document.getElementById('typing');
 const closeNavBtn = document.getElementById('close-sidebar');
 const cursor = document.querySelector('.cursor');
-
+const heroBtn = document.getElementById("hero-btn");
 
 openNavBtn.addEventListener('click', ()=>{
     helperFunction.slideSidenavIn();
@@ -25,3 +23,7 @@ closeNavBtn.addEventListener('click', ()=>{
 addEventListener('DOMContentLoaded', ()=>{
     typeWriter.typeWriter()
 })
+
+if (document.body.animate) {
+  heroBtn.addEventListener("click", helperFunction.pop);
+}
