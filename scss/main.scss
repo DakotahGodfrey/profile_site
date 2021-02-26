@@ -1,0 +1,29 @@
+@import 'reset';
+@import'config';
+@import'mixins';
+
+@import'site-header';
+@import'side-nav';
+@import'hero';
+
+@import'transitions';
+
+body{
+    font-family: $sans-font-stack;
+}
+
+
+main{
+    overflow-x: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+
+@media(max-width: 800px){
+    @import'media';
+}

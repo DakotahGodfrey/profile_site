@@ -1,0 +1,91 @@
+.side-bar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: $site-dark-color-1;
+    color: $site-light-color-1;
+    border-top-left-radius: 50px;
+    z-index: 100;
+    border-bottom-left-radius: 50px;
+    width: 80%;
+    height: 100vh;
+    transform: translateX(300%);
+    
+    visibility: hidden;
+    @include padding-2;
+
+    button{
+    position: absolute;
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 30px;
+    right: 30px;
+    .menu-icon-container{
+        color: #fff;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: 2px solid $site-light-color-1;
+        box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.9);
+        background-color: $site-dark-color-0;
+        transition: transform 0.4s ease-out, box-shadow 0.4s ease-out, border-color 0.4s ease-out;       
+        }
+    }
+    header{
+        padding: 0 2rem 0 0;
+        margin-top: 6rem;
+        h1{
+            font-size: 3rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 200;
+            }
+        }
+    &.active{
+        transform: translateX(0);
+        visibility: visible;
+
+    }
+    }
+    nav{
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding-top: 6rem;
+        li{
+            padding-bottom: 2rem;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+        }
+    }
+    .nav-link{
+        color: $site-light-color-1;
+        font-size: 2rem;      
+        border-bottom: 2px solid transparent;
+        transition: border-color 0.2s ease-out, opacity 0.2s ease-out, padding-bottom 0.4s 0.2s ease-out;
+        opacity: 0.6;
+        &.current{
+        border-bottom: 2px solid $site-light-color-2;
+        opacity: 1;
+        transition: padding-bottom 0.4s 0s ease-out;
+        }
+    }
+}
+
+.light-box{
+    width: 100vh;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba($color: $site-medium-color-2, $alpha: 0.4);
+    visibility: hidden;
+}
