@@ -1,0 +1,16 @@
+.section-a {
+  padding-top: 8rem;
+  padding: 8rem 2rem;
+  background-color: $site-dark-color-0;
+  color: $site-light-color-1;
+  h3{
+      font-size: 6rem;
+      margin-bottom: 2rem;
+      margin-top: -2rem;
+  }
+  p{
+      line-height: 2;
+      font-size: 2rem;
+      hyphens: auto;
+  }
+}

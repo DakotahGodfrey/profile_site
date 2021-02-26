@@ -39,7 +39,7 @@ export function pop(e) {
 }
 
 function createParticle(x, y) {
-  const particle = document.createElement("particle");
+  const particle = document.createElement("span");
   particle.classList.add("particle");
   document.body.appendChild(particle);
 
