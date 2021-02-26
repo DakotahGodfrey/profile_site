@@ -7,10 +7,45 @@
       font-size: 6rem;
       margin-bottom: 2rem;
       margin-top: -2rem;
+      text-align: center;
   }
   p{
       line-height: 2;
       font-size: 2rem;
       hyphens: auto;
+      text-align: center;
+  }
+  h4{
+      text-align: center;
+      font-size: 3rem;
+      padding-top: 2rem;
+  }
+  .social-container{
+      display: flex;
+      margin-top: 2rem;
+      width: 100%;
+      justify-content: space-evenly;
+      a{
+          padding: 1rem;
+          border-radius: 50%;
+          background-color: #fff;
+          box-shadow: 0 5px 10px rgba($color: #ccc, $alpha: 0.4), 0 4px 20px inset rgba(0, 0, 0, 0.4);
+          transition: box-shadow 0.6s ease-out, transform 0.4s ease-out;
+          &:hover{
+              box-shadow: none;
+              transform: scale(0.98) rotate(45deg);
+          }
+          &:active{
+              transform: rotate(360deg);
+          }
+          &#twitter{
+          color: #1DA1F2;
+
+          }
+          &#linkedin{
+            color: #2867B2;
+          }
+      }
+
   }
 }
