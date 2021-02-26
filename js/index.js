@@ -4,7 +4,6 @@ const openNavBtn = document.getElementById('open-sidebar');
 const closeNavBtn = document.getElementById('close-sidebar');
 const cursor = document.querySelector('.cursor');
 const heroBtn = document.getElementById("hero-btn");
-const mainHeader = document.getElementById('main-site-header');
 
 
 openNavBtn.addEventListener('click', ()=>{
