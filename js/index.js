@@ -4,6 +4,8 @@ const openNavBtn = document.getElementById('open-sidebar');
 const closeNavBtn = document.getElementById('close-sidebar');
 const cursor = document.querySelector('.cursor');
 const heroBtn = document.getElementById("hero-btn");
+const mainHeader = document.getElementById('main-site-header');
+
 
 openNavBtn.addEventListener('click', ()=>{
     helperFunction.slideSidenavIn();
@@ -27,3 +29,18 @@ addEventListener('DOMContentLoaded', ()=>{
 if (document.body.animate) {
   heroBtn.addEventListener("click", helperFunction.pop);
 }
+
+// window.addEventListener('scroll', ()=> {
+//     mainHeader.style.opacity='0.01'
+//     mainHeader.style.transform='translateY(-80px)'
+// })
+let scrollPosition = 0;
+
+window.addEventListener("scroll", () => {
+  if ((document.body.getBoundingClientRect()).top > scrollPosition) {
+    helperFunction.scrollHeaderDOWN();
+  } else{
+      helperFunction.scrollHeaderUP()
+  }
+  scrollPosition = (document.body.getBoundingClientRect()).top
+});
