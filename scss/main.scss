@@ -6,6 +6,7 @@
 @import'side-nav';
 @import'hero';
 @import'about';
+@import'projects';
 @import'transitions';
 
 body{
@@ -26,4 +27,14 @@ main{
 
 @media(max-width: 800px){
     @import'media';
+}
+
+@media (max-height: 375px) {
+  .project-gallery {
+    .project-thumbnail {
+      .project-info {
+        height: 100%;
+      }
+    }
+  }
 }
