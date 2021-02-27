@@ -83,9 +83,10 @@
 .light-box{
     width: 100vh;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: rgba($color: $site-medium-color-2, $alpha: 0.4);
     visibility: hidden;
+    
 }
