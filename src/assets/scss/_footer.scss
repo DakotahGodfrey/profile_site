@@ -1,0 +1,37 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  box-shadow: 0 -4px 4px rgba($color: $site-medium-light-color, $alpha: 0.5);
+  small {
+    text-align: center;
+  }
+  ul {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-left: $site-medium-light-color 2px solid;
+    padding: 0.5rem;
+    height: 2.2rem;
+    li {
+      margin: 0 1rem;
+    }
+    .social-link {
+      color: $text-dark-color;
+    }
+  }
+}
+
+.social-link {
+  display: inline-block;
+  min-height: 44px;
+  min-width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
