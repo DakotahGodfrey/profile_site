@@ -1,0 +1,50 @@
+.bio {
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0 3rem;
+  &-lead {
+    padding: 5rem 0 1rem;
+  }
+  span {
+    font-size: 4vh;
+    display: inline-block;
+    margin-right: 1rem;
+    animation: wave 3s infinite forwards linear;
+    transform-origin: center;
+  }
+}
+
+@keyframes wave {
+  25%,
+  75% {
+    transform: rotate(30deg);
+  }
+  50%,
+  100%,
+  0% {
+    transform: rotate(-20deg);
+  }
+}
+.cta-link {
+  display: block;
+  width: max-content;
+  padding: 2rem 2.5rem;
+  margin: 2rem auto 0 auto;
+  border: $site-medium-light-color 2px solid;
+  margin: 2rem auto;
+}
+
+.home-main {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.home-section {
+  align-self: center;
+  margin: 2rem 0;
+}
