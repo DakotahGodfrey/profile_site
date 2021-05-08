@@ -6,6 +6,7 @@ import About from "./components/pages/about/About";
 import Contact from "./components/pages/contact/Contact";
 import Projects from "./components/pages/projects/Projects";
 import "./assets/scss/index.scss";
+import Footer from "./components/layout/footer/Footer";
 const App = () => {
   return (
     <div>
@@ -19,6 +20,7 @@ const App = () => {
             <Route exact path="/projects" component={Projects} />
           </Switch>
         </main>
+        <Footer />
       </Router>
     </div>
   );
