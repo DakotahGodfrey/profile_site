@@ -1,0 +1,32 @@
+.main-about {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.about-section {
+  h1 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+    font-weight: 200;
+  }
+  .bio {
+    margin-bottom: 2rem;
+  }
+  .shoutout {
+    // display: inline-block;
+    border-bottom: $site-medium-light-color 2px solid;
+    color: $text-medium-dark-color;
+    &:hover {
+      background-color: royalblue;
+      color: #eee;
+    }
+    &:focus {
+      @extend:hover;
+      outline: thin dashed #222;
+    }
+  }
+}

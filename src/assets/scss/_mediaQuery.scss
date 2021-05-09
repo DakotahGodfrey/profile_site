@@ -1,0 +1,23 @@
+@media screen and (max-width: 700px) {
+  .about-section {
+    .bio {
+      padding: 0 1rem;
+    }
+  }
+  .contact-section {
+    h1 {
+      margin-top: 0.5rem;
+    }
+    .contact-methods {
+      grid-template-columns: 1fr;
+      gap: 0;
+      input {
+        letter-spacing: 0.05rem;
+      }
+      .socials {
+        border-top: $site-medium-light-color 2px solid;
+        padding-top: 1.5rem;
+      }
+    }
+  }
+}
