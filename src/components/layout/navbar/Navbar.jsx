@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const Navbar = () => {
+const Navbar = ({ postionFixed }) => {
   return (
     <nav>
       <div className="logo">
@@ -16,7 +16,7 @@ const Navbar = () => {
           <Link to="/contact">Contact</Link>
         </li>
         <li>
-          <Link to="/skills">Skills</Link>
+          <Link to="/skills">Projects</Link>
         </li>
         <li>
           <Link to="/about">About</Link>

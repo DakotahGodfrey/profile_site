@@ -9,6 +9,8 @@ const Footer = () => {
           <a
             aria-label="linked in profile"
             className="social-link"
+            target="_blank"
+            rel="noreferrer"
             href="https://www.linkedin.com/in/dakotah-godfrey-2186091ab/"
           >
             <i className="fab fa-2x fa-linkedin-in"></i>
@@ -18,7 +20,9 @@ const Footer = () => {
           <a
             aria-label="twitter profile"
             className="social-link"
-            href="https://www.twitter.com/dakotah_dev"
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.github.com/DakotahGodfrey"
           >
             <i className="fab fa-2x fa-github-alt"></i>
           </a>
@@ -27,7 +31,9 @@ const Footer = () => {
           <a
             aria-label="github profile"
             className="social-link"
-            href="https://www.github.com/DakotahGodfrey"
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.twitter.com/dakotah_dev"
           >
             <i className="fab fa-2x fa-twitter"></i>
           </a>
