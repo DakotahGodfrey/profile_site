@@ -9,7 +9,7 @@ import "./assets/scss/index.scss";
 import Footer from "./components/layout/footer/Footer";
 const App = () => {
   return (
-    <div>
+    <div className="App">
       <Router>
         <Switch>
           <Route exact path="/" component={Home} />

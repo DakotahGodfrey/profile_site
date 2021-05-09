@@ -29,7 +29,7 @@ const Contact = () => {
               />
             </div>
             <div className="form-fields">
-              <label htmlFor="email">Name</label>
+              <label htmlFor="email">E-mail</label>
               <input
                 type="email"
                 name="email"
@@ -66,7 +66,7 @@ const Contact = () => {
               <li>
                 Linkedin:{" "}
                 <span>
-                  <a href="https://www.linked.com/in/dakotah-godfrey-2186091ab/">
+                  <a href="https://www.linkedin.com/in/dakotah-godfrey-2186091ab">
                     @DakotahGodfrey
                   </a>
                 </span>
