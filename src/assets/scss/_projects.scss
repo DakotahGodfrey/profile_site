@@ -1,0 +1,35 @@
+.main-project {
+  display: grid;
+  min-height: 100vh;
+  align-items: flex-start;
+}
+.project-section {
+  display: grid;
+  margin: 0 auto;
+  h3 {
+    font-weight: 300;
+    padding: 0.5rem 0;
+    border-bottom: $site-medium-light-color 2px solid;
+  }
+}
+.project-card {
+  max-width: 450px;
+  margin: 2rem;
+  border: $site-medium-light-color 2px solid;
+}
+
+.project-card-image img {
+  object-fit: contain;
+  display: block;
+  width: 100%;
+}
+
+.project-card-image {
+  border-bottom: $site-medium-light-color 2px solid;
+}
+.project-card-content {
+  padding: 1rem;
+  p {
+    padding: 0.5rem;
+  }
+}

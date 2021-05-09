@@ -1,8 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const Navbar = ({ postionFixed }) => {
+const Navbar = ({ positionFixed }) => {
+  console.log(positionFixed);
+  const navStyle = {
+    position: positionFixed ? "fixed" : "static",
+    width: "100%",
+  };
   return (
-    <nav>
+    <nav style={navStyle}>
       <div className="logo">
         <span>D | G</span>
       </div>
@@ -16,7 +21,7 @@ const Navbar = ({ postionFixed }) => {
           <Link to="/contact">Contact</Link>
         </li>
         <li>
-          <Link to="/skills">Projects</Link>
+          <Link to="/projects">Projects</Link>
         </li>
         <li>
           <Link to="/about">About</Link>
