@@ -1,11 +1,14 @@
 import React from "react";
 import Navbar from "../../layout/navbar/Navbar";
 import Footer from "../../layout/footer/Footer";
+import { useSelector } from "react-redux";
+import { selectPages } from "../pagesSlice";
 const Contact = () => {
-  const positonFixed = false;
+  const pages = useSelector(selectPages);
+  const { darkMode } = pages;
   return (
-    <main className="main-contact">
-      <Navbar postionFixed={positonFixed} />
+    <main className={`main-contact ${darkMode && "dark"}`}>
+      <Navbar />
       <section className="contact-section">
         <h1>Get In Touch</h1>
         <div className="contact-heading">

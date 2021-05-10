@@ -2,9 +2,13 @@ import React from "react";
 import Navbar from "../../layout/navbar/Navbar";
 import Footer from "../../layout/footer/Footer";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { selectPages } from "../pagesSlice";
 const About = () => {
+  const pages = useSelector(selectPages);
+  const { darkMode } = pages;
   return (
-    <main className="main-about">
+    <main className={`main-about ${darkMode && "dark"}`}>
       <Navbar />
       <section className="about-section">
         <article className="bio">

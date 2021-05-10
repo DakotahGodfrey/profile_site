@@ -3,15 +3,15 @@ import { createSlice } from "@reduxjs/toolkit";
 const pagesSlice = createSlice({
   name: "pages",
   initialState: {
-    prefersDark: true,
+    darkMode: true,
   },
   reducers: {
-    setDarkmode: (state) => {
-      state.prefersDark = !state.prefersDark;
+    setDarkMode: (state) => {
+      state.darkMode = !state.darkMode;
     },
   },
 });
 
-export const { setDarkmode } = pagesSlice.actions;
-export const { selectState } = (state) => state;
+export const { setDarkMode } = pagesSlice.actions;
+export const selectPages = (state) => state.pagesSlice;
 export default pagesSlice.reducer;

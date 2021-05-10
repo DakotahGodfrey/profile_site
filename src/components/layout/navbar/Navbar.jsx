@@ -1,13 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const Navbar = ({ positionFixed }) => {
-  console.log(positionFixed);
-  const navStyle = {
-    position: positionFixed ? "fixed" : "static",
-    width: "100%",
+import { selectPages, setDarkMode } from "../../pages/pagesSlice";
+import { useDispatch, useSelector } from "react-redux";
+
+const Navbar = () => {
+  const pages = useSelector(selectPages);
+  const { darkMode } = pages;
+  const dispatch = useDispatch();
+  const handleClick = () => {
+    dispatch(setDarkMode());
   };
+  console.log(pages);
   return (
-    <nav style={navStyle}>
+    <nav className={darkMode ? "dark" : ""}>
       <div className="logo">
         <span>D | G</span>
       </div>
@@ -28,9 +33,15 @@ const Navbar = ({ positionFixed }) => {
           <Link to="/contact">Contact</Link>
         </li>
         <li>
-          <button className="dark-mode-toggle">
-            <i className="material-icons light-mode">light_mode</i>
-            <i className="material-icons dark-mode">nightlight_round</i>
+          <button onClick={handleClick} className="dark-mode-toggle">
+            <i
+              className={`material-icons light-mode ${darkMode ? "" : "fade"}`}
+            >
+              light_mode
+            </i>
+            <i className={`material-icons dark-mode ${darkMode ? "fade" : ""}`}>
+              nightlight_round
+            </i>
           </button>
         </li>
       </ul>

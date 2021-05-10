@@ -11,6 +11,25 @@
     font-size: 2rem;
     margin-bottom: 1rem;
   }
+  &.dark {
+    background-color: $text-dark-color;
+    color: #fff;
+    .contact-section {
+      a {
+        color: cadetblue;
+      }
+      input {
+        background-color: $site-medium-light-color;
+      }
+      button[type="submit"] {
+        color: $site-medium-light-color;
+        font-weight: 600;
+        i {
+          color: $site-medium-light-color;
+        }
+      }
+    }
+  }
 }
 
 .contact-section {

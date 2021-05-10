@@ -5,8 +5,9 @@ import shoppies from "../../../assets/images/the_shoppies.png";
 import itTracker from "../../../assets/images/it_tracker.png";
 import ProjectCard from "../../projectCard/ProjectCard";
 import underConstruction from "../../../assets/images/under_construction.png";
+import { useSelector } from "react-redux";
+import { selectPages } from "../pagesSlice";
 const Projects = () => {
-  const positionFixed = false;
   const projects = [
     {
       projectTitle: "The Shoppies: An Internship Project",
@@ -30,10 +31,11 @@ const Projects = () => {
       projectLink: "https://github.com/DakotahGodfrey/react-reddit-client",
     },
   ];
-
+  const pages = useSelector(selectPages);
+  const { darkMode } = pages;
   return (
-    <main className="main-project">
-      <Navbar positionFixed={positionFixed} />
+    <main className={`main-project ${darkMode && "dark"}`}>
+      <Navbar />
       <section className="project-section">
         {projects.map((project) => (
           <ProjectCard project={project} />

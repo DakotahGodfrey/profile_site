@@ -42,6 +42,13 @@
   grid-template-columns: 1fr;
   align-items: flex-start;
   min-height: 100vh;
+  &.dark {
+    background-color: $text-dark-color;
+    color: #fff;
+    a {
+      color: $site-medium-light-color;
+    }
+  }
 }
 
 .home-section {

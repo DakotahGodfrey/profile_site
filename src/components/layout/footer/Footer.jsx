@@ -1,8 +1,11 @@
 import React from "react";
-
+import { useSelector } from "react-redux";
+import { selectPages } from "../../pages/pagesSlice";
 const Footer = () => {
+  const pages = useSelector(selectPages);
+  const { darkMode } = pages;
   return (
-    <footer>
+    <footer className={darkMode && "dark"}>
       <small>&copy; 2021 Dakotah Godfrey</small>
       <ul>
         <li>

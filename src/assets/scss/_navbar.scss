@@ -4,6 +4,13 @@ nav {
   justify-content: space-between;
   padding: 0.5rem;
   box-shadow: 0 4px 4px rgba($color: $site-medium-light-color, $alpha: 0.5);
+  &.dark {
+    background-color: #222;
+    color: $site-medium-light-color;
+    a {
+      color: $site-medium-light-color;
+    }
+  }
   ul {
     list-style: none;
     display: inline-flex;
@@ -58,20 +65,24 @@ nav {
     .dark-mode {
       grid-row: 1;
       grid-column: 1;
-      opacity: 1;
       color: #fff7c2;
       transform-origin: center;
       border-radius: 50%;
       width: min-content;
+      transition: opacity 0.4s;
       justify-self: center;
+      background-color: #333;
     }
     .light-mode {
       grid-row: 1;
       grid-column: 1;
       color: #fad700;
-      opacity: 0;
+      transition: opacity 0.4s;
       font-weight: 700;
       transition: all 0.6s ease-out;
+    }
+    .fade {
+      opacity: 0;
     }
   }
 }

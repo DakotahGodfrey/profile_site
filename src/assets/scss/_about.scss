@@ -3,6 +3,22 @@
   grid-template-columns: 1fr;
   align-items: flex-start;
   min-height: 100vh;
+  &.dark {
+    background-color: $text-dark-color;
+    color: #fff;
+    .bio {
+      font-weight: 600;
+    }
+    .about-section {
+      a {
+        color: cadetblue;
+        &:hover {
+          background-color: royalblue;
+          color: #eee;
+        }
+      }
+    }
+  }
 }
 
 .about-section {

@@ -2,12 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Footer from "../../layout/footer/Footer";
 import Navbar from "../../layout/navbar/Navbar";
-const Home = () => {
-  const positionFixed = false;
+import { selectPages } from "../pagesSlice";
+import { useSelector } from "react-redux";
 
+const Home = () => {
+  const pages = useSelector(selectPages);
+  const { darkMode } = pages;
   return (
-    <main className="home-main">
-      <Navbar positionFixed={positionFixed} />
+    <main className={`home-main ${darkMode && "dark"}`}>
+      <Navbar />
       <section className="home-section">
         <article className="bio">
           <h1 className="bio-lead">
