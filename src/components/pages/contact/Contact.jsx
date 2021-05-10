@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../../layout/navbar/Navbar";
 import Footer from "../../layout/footer/Footer";
 import { useSelector } from "react-redux";
@@ -6,6 +6,9 @@ import { selectPages } from "../pagesSlice";
 const Contact = () => {
   const pages = useSelector(selectPages);
   const { darkMode } = pages;
+  useEffect(() => {
+    document.title = `Contact | Dakotah Godfrey`;
+  });
   return (
     <main className={`main-contact ${darkMode && "dark"}`}>
       <Navbar />

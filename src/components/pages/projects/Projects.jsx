@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "../../layout/footer/Footer";
 import Navbar from "../../layout/navbar/Navbar";
 import shoppies from "../../../assets/images/the_shoppies.png";
@@ -31,6 +31,9 @@ const Projects = () => {
       projectLink: "https://github.com/DakotahGodfrey/react-reddit-client",
     },
   ];
+  useEffect(() => {
+    document.title = `My Projects | Dakotah Godfrey`;
+  });
   const pages = useSelector(selectPages);
   const { darkMode } = pages;
   return (

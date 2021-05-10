@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Footer from "../../layout/footer/Footer";
 import Navbar from "../../layout/navbar/Navbar";
@@ -8,6 +8,9 @@ import { useSelector } from "react-redux";
 const Home = () => {
   const pages = useSelector(selectPages);
   const { darkMode } = pages;
+  useEffect(() => {
+    document.title = `Home | Dakotah Godfrey`;
+  });
   return (
     <main className={`home-main ${darkMode && "dark"}`}>
       <Navbar />

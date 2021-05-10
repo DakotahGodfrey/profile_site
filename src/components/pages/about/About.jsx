@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../../layout/navbar/Navbar";
 import Footer from "../../layout/footer/Footer";
 import { Link } from "react-router-dom";
@@ -7,6 +7,9 @@ import { selectPages } from "../pagesSlice";
 const About = () => {
   const pages = useSelector(selectPages);
   const { darkMode } = pages;
+  useEffect(() => {
+    document.title = `About | Dakotah Godfrey`;
+  });
   return (
     <main className={`main-about ${darkMode && "dark"}`}>
       <Navbar />
