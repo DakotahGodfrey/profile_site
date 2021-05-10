@@ -6,7 +6,9 @@ const Footer = () => {
   const { darkMode } = pages;
   return (
     <footer className={darkMode && "dark"}>
-      <small>&copy; 2021 Dakotah Godfrey</small>
+      <span className="footer-message">
+        Made with <i className="material-icons">favorite</i> by Dakotah Godfrey
+      </span>
       <ul>
         <li>
           <a
