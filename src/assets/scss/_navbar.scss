@@ -9,6 +9,13 @@ nav {
     color: $site-medium-light-color;
     a {
       color: $site-medium-light-color;
+      &:hover {
+        color: $site-light-color;
+        transform: scale(1.1);
+      }
+      &:focus {
+        @extend:hover;
+      }
     }
   }
   ul {
@@ -21,7 +28,7 @@ nav {
       font-size: 1.6rem;
       a {
         display: block;
-        color: $tex-light-grey-color;
+        color: $text-medium-dark-color;
         transition: all 0.4s ease-out;
         &:hover {
           color: $text-dark-color;

@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const pagesSlice = createSlice({
   name: "pages",
   initialState: {
-    darkMode: true,
+    darkMode: false,
   },
   reducers: {
     setDarkMode: (state) => {

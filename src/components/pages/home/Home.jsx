@@ -28,9 +28,14 @@ const Home = () => {
             express myself.
           </p>
         </article>
-        <Link className="cta-link" to="/projects">
-          Get Started
-        </Link>
+        <div className="call-to-action-links">
+          <Link className="cta-link" to="/about">
+            About Me
+          </Link>
+          <Link className="cta-link" to="/projects">
+            My Work
+          </Link>
+        </div>
       </section>
       <Footer />
     </main>

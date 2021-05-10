@@ -3,7 +3,7 @@
   margin-bottom: 1rem;
   font-size: 1.6rem;
   max-width: 768px;
-  margin: 0 auto;
+  margin: 0 auto 2rem auto;
   padding: 0 3rem;
   &-lead {
     padding: 5rem 0 1rem;
@@ -54,4 +54,12 @@
 .home-section {
   align-self: center;
   // margin: 2rem 0;
+}
+.call-to-action-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a {
+    margin: 1rem;
+  }
 }
