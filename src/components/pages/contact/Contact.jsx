@@ -20,7 +20,7 @@ const Contact = () => {
           </p>
         </div>
         <section className="contact-methods">
-          <form name="contact" netlify>
+          <form name="contact" action="POST" netlify>
             <div className="form-fields">
               <label htmlFor="name">Name</label>
               <input
