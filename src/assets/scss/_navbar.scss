@@ -11,7 +11,19 @@ nav {
     border-left: $site-medium-light-color 2px solid;
     li {
       margin: 0.5rem;
-      font-size: 1.4rem;
+      font-size: 1.6rem;
+      a {
+        display: block;
+        color: $tex-light-grey-color;
+        transition: all 0.4s ease-out;
+        &:hover {
+          color: $text-dark-color;
+          transform: scale(1.1);
+        }
+        &:focus {
+          @extend:hover;
+        }
+      }
     }
   }
   .logo {
@@ -23,5 +35,65 @@ nav {
     font-weight: 200;
     justify-content: center;
     border: 2px solid $site-medium-light-color;
+  }
+  .dark-mode-toggle {
+    display: grid;
+    height: 4.4rem;
+    width: 4.4rem;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    &:hover {
+      .light-mode {
+        animation: spin 3s linear infinite;
+      }
+      .dark-mode {
+        animation: rock 4s ease-out infinite;
+      }
+    }
+    &:focus {
+      @extend:hover;
+    }
+
+    .dark-mode {
+      grid-row: 1;
+      grid-column: 1;
+      opacity: 1;
+      color: #fff7c2;
+      transform-origin: center;
+      border-radius: 50%;
+      width: min-content;
+      justify-self: center;
+    }
+    .light-mode {
+      grid-row: 1;
+      grid-column: 1;
+      color: #fad700;
+      opacity: 0;
+      font-weight: 700;
+      transition: all 0.6s ease-out;
+    }
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rock {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-35deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(5deg);
   }
 }

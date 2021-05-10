@@ -28,9 +28,9 @@ const Navbar = ({ positionFixed }) => {
           <Link to="/contact">Contact</Link>
         </li>
         <li>
-          <button>
-            <i className="material-icons">light_mode</i>
-            <i className="material-icons">dark_mode</i>
+          <button className="dark-mode-toggle">
+            <i className="material-icons light-mode">light_mode</i>
+            <i className="material-icons dark-mode">nightlight_round</i>
           </button>
         </li>
       </ul>
