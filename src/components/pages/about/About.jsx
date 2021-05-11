@@ -21,14 +21,15 @@ const About = () => {
             I'm Dakotah Godfrey, I'm a young community-taught web developer from
             Canada. I'm new to the web development space, but it's quickly
             become a passion. I've been focusing on building the foundational
-            skills needed to secure myself a job as a Frontend developer. Lately
-            I've been trying my hand at building accessible and beautiful web
-            apps with React and Redux.
+            skills needed to secure myself a job as a Frontend developer.
+            Lately, I've been trying my hand at building accessible and
+            beautiful web apps with React and Redux.
           </p>
           <p className="bio">
-            Prior to the Covid-19 epidemic I was working in the hospitality
+            Before the Covid-19 epidemic, I was working in the hospitality
             industry in Toronto. As work started to dry up, I began looking for
-            a change. I started with basic HTML and CSS. Through companies like{" "}
+            a change. I started with the basics of HTML and CSS. Through
+            resources like{" "}
             <a
               className="shoutout"
               href="https://www.codecademy.com/"
@@ -37,7 +38,7 @@ const About = () => {
             >
               Codecademy
             </a>{" "}
-            and a plethora of online tutorials from awesome creators like{" "}
+            and a number of online tutorials from awesome creators like{" "}
             <a
               className="shoutout"
               href="https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA"
@@ -64,23 +65,23 @@ const About = () => {
             >
               Self Teach Me
             </a>
-            , and others I grew to really enjoy the web development space and
-            community overall.
+            , and many others I grew to really enjoy the web development
+            community.
           </p>
           <p className="bio">
             My Long term goal is to help make the tech community even more
-            accessible. I had always thought that a Computer Science or other{" "}
-            degree in{" "}
-            <abbr title="Science Tech Engineering and Math">STEM</abbr> was a
-            pre-requisite for getting into development, and I've never been so
-            glad to be wrong. If I can reach a spot where I can give back even a
-            little, of what I've gained from the dev community and help people
-            grow in this space. I'll able be to chalk this journey up as a
-            sucesss.{" "}
+            accessible. I had always thought that a Computer Science or other
+            degree in <abbr title="Science Tech Engineering or Math">STEM</abbr>{" "}
+            was a pre-requisite for getting into development, and I've never
+            been so glad to be wrong. If I can reach a spot where I can give
+            back even a little, of what I've gained from the dev community and
+            help people grow in this space. I'll able be to chalk this journey
+            up as a success.
           </p>
           <p className="bio">
             At the moment I'm looking to start an internship or a junior
-            developer role, to continue to grow my skillset and gain experience.
+            developer role, to continue to grow my skill set and gain
+            experience.
           </p>
           <p className="bio">
             Anyways that's me, if you'd like to get in touch please feel free to

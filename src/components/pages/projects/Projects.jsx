@@ -39,7 +39,7 @@ const Projects = () => {
     {
       projectTitle: "Under Construction",
       projectDescription:
-        "Right now I'm working on a reddit client built with React and Redux. You can follow along @  ",
+        "Right now I'm working on a Reddit client built with React and Redux. You can follow along @  ",
       projectImage: underConstruction,
       repoLink: "https://github.com/DakotahGodfrey/react-reddit-client",
       stack: [

@@ -23,8 +23,8 @@ const Home = () => {
           </h3>
           <p className="bio">
             I'm a self-taught Front-End developer from Toronto. I'm passionate
-            about accessible & responsive design. Lately I've been working on
-            desigining interactive web apps using React.js and Redux. I'm
+            about accessible & responsive design. Lately, I've been working on
+            designing interactive web apps using React.js and Redux. I'm
             currently open to new opportunities.
           </p>
         </article>

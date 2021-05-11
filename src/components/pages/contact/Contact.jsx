@@ -18,7 +18,7 @@ const Contact = () => {
           <h2>Say Hello</h2>
           <p>
             If you'd like to send me a message about a cool project or just to
-            chat, I can be reached on social media. Or if you perfer e-mail just
+            chat, I can be reached on social media. Or if you prefer e-mail just
             fill out the form below
           </p>
         </div>
