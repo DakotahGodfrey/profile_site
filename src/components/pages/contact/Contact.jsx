@@ -10,7 +10,7 @@ const Contact = () => {
     document.title = `Contact | Dakotah Godfrey`;
   });
   return (
-    <main className={`main-contact ${darkMode && "dark"}`}>
+    <main className={`main-contact ${darkMode ? "dark" : ""}`}>
       <Navbar />
       <section className="contact-section">
         <h1>Get In Touch</h1>

@@ -1,4 +1,5 @@
 import React from "react";
+import Stack from "./Stack";
 
 const ProjectCard = ({ project }) => {
   const {
@@ -21,18 +22,7 @@ const ProjectCard = ({ project }) => {
         <div className="project-stack">
           Stack:
           {stack
-            ? stack.map((item) => (
-                <div class="tech">
-                  {item.tech}
-                  {item.logo ? (
-                    <i className={item.logo}></i>
-                  ) : item.logoSVG ? (
-                    <div className="logoSvg">
-                      <img src={item.logoSVG} alt={item.tech} />
-                    </div>
-                  ) : null}
-                </div>
-              ))
+            ? stack.map((item) => <Stack item={item} key={item.key} />)
             : null}
         </div>
       </div>

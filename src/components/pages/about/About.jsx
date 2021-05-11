@@ -11,7 +11,7 @@ const About = () => {
     document.title = `About | Dakotah Godfrey`;
   });
   return (
-    <main className={`main-about ${darkMode && "dark"}`}>
+    <main className={`main-about ${darkMode ? "dark" : ""}`}>
       <Navbar />
       <section className="about-section">
         <article className="bio">

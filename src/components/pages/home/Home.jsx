@@ -12,7 +12,7 @@ const Home = () => {
     document.title = `Home | Dakotah Godfrey`;
   });
   return (
-    <main className={`home-main ${darkMode && "dark"}`}>
+    <main className={`home-main ${darkMode ? "dark" : ""}`}>
       <Navbar />
       <section className="home-section">
         <article className="bio">

@@ -17,10 +17,11 @@ const Projects = () => {
       projectImage: shoppies,
       projectLink: "https://the-shoppies-24f25.web.app.",
       stack: [
-        { tech: "React", logo: "fab fa-react" },
-        { tech: "Redux", logo: "", logoSVG: reduxLogo },
-        { tech: "Scss", logo: "fab fa-sass" },
+        { tech: "React", logo: "fab fa-react", key: 0 },
+        { tech: "Redux", logo: "", logoSVG: reduxLogo, key: 1 },
+        { tech: "Scss", logo: "fab fa-sass", key: 2 },
       ],
+      key: "A",
     },
     {
       projectTitle: "IT-ticket Tracker",
@@ -29,9 +30,10 @@ const Projects = () => {
       projectImage: itTracker,
       projectLink: "https://github.com/DakotahGodfrey/it-log",
       stack: [
-        { tech: "React", logo: "fab fa-react" },
-        { tech: "Redux", logo: "", logoSVG: reduxLogo },
+        { tech: "React", logo: "fab fa-react", key: "0" },
+        { tech: "Redux", logo: "", logoSVG: reduxLogo, key: "1" },
       ],
+      key: "B",
     },
     {
       projectTitle: "Under Construction",
@@ -40,10 +42,11 @@ const Projects = () => {
       projectImage: underConstruction,
       projectLink: "https://github.com/DakotahGodfrey/react-reddit-client",
       stack: [
-        { tech: "React", logo: "fab fa-react" },
-        { tech: "Redux", logo: "", logoSVG: reduxLogo },
-        { tech: "Scss", logo: "fab fa-sass" },
+        { tech: "React", logo: "fab fa-react", key: "0" },
+        { tech: "Redux", logo: "", logoSVG: reduxLogo, key: "1" },
+        { tech: "Scss", logo: "fab fa-sass", key: "2" },
       ],
+      key: "C",
     },
   ];
   useEffect(() => {
@@ -52,7 +55,7 @@ const Projects = () => {
   const pages = useSelector(selectPages);
   const { darkMode } = pages;
   return (
-    <main className={`main-project ${darkMode && "dark"}`}>
+    <main className={`main-project ${darkMode ? "dark" : ""}`}>
       <Navbar />
       <section className="project-section">
         <header className="introduction">
@@ -65,7 +68,7 @@ const Projects = () => {
         </header>
         <section className="project-container">
           {projects.map((project) => (
-            <ProjectCard project={project} />
+            <ProjectCard project={project} key={project.key} />
           ))}
         </section>
       </section>
