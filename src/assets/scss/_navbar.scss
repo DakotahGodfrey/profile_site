@@ -23,8 +23,9 @@ nav {
     display: inline-flex;
     align-items: center;
     border-left: $site-medium-light-color 2px solid;
+    height: 30px;
     li {
-      margin: 0.5rem;
+      margin: 0.25rem;
       font-size: 1.6rem;
       a {
         display: block;
@@ -41,19 +42,23 @@ nav {
     }
   }
   .logo {
-    height: 44px;
-    width: 44px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
     display: flex;
+    margin-left: 2rem;
     align-items: center;
+    font-size: 1.4rem;
     font-weight: 200;
+    padding: 0.25rem;
     justify-content: center;
     border: 2px solid $site-medium-light-color;
+    color: #000;
   }
   .dark-mode-toggle {
     display: grid;
-    height: 4.4rem;
-    width: 4.4rem;
+    height: 4rem;
+    width: 4rem;
     align-items: center;
     border-radius: 50%;
     cursor: pointer;
@@ -72,13 +77,13 @@ nav {
     .dark-mode {
       grid-row: 1;
       grid-column: 1;
-      color: #fff7c2;
+      color: #faf6df;
       transform-origin: center;
       border-radius: 50%;
       width: min-content;
       transition: opacity 0.4s;
       justify-self: center;
-      background-color: #333;
+      color: #333;
     }
     .light-mode {
       grid-row: 1;
@@ -97,21 +102,5 @@ nav {
 @keyframes spin {
   100% {
     transform: rotate(360deg);
-  }
-}
-
-@keyframes rock {
-  0%,
-  100% {
-    transform: rotate(0);
-  }
-  25% {
-    transform: rotate(-35deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  75% {
-    transform: rotate(5deg);
   }
 }

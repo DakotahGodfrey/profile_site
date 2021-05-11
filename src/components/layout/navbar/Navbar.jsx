@@ -13,9 +13,11 @@ const Navbar = () => {
   const ariaLabel = `${darkMode ? "turn off dark mode" : "turn on dark mode"}`;
   return (
     <nav className={darkMode ? "dark" : ""}>
-      <div className="logo">
-        <span>D | G</span>
-      </div>
+      <Link to="/">
+        <div className="logo">
+          <span>D | G</span>
+        </div>
+      </Link>
       <ul>
         <li>
           <Link to="/" className="current">
@@ -45,7 +47,7 @@ const Navbar = () => {
               light_mode
             </i>
             <i className={`material-icons dark-mode ${darkMode ? "fade" : ""}`}>
-              nightlight_round
+              nights_stay
             </i>
           </button>
         </li>
