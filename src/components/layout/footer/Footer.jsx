@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { selectPages } from "../../pages/pagesSlice";
+import bmcSVG from "../../../assets/images/bmc.svg";
 const Footer = () => {
   const pages = useSelector(selectPages);
   const { darkMode } = pages;
@@ -23,7 +24,7 @@ const Footer = () => {
         </li>
         <li>
           <a
-            aria-label="twitter profile"
+            aria-label="github profile"
             className="social-link"
             target="_blank"
             rel="noreferrer"
@@ -34,7 +35,7 @@ const Footer = () => {
         </li>
         <li>
           <a
-            aria-label="github profile"
+            aria-label="twitter profile"
             className="social-link"
             target="_blank"
             rel="noreferrer"

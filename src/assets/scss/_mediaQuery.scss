@@ -1,4 +1,10 @@
 @media screen and (max-width: 780px) {
+  footer {
+    .footer-message {
+      font-size: 10px;
+      gap: 0.5rem;
+    }
+  }
   .about-section {
     .bio {
       padding: 0 1rem;

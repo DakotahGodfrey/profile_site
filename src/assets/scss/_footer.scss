@@ -98,7 +98,10 @@ footer {
     }
   }
 }
-
+img.logoSvg {
+  max-width: 20px;
+  max-height: 20px;
+}
 @keyframes scale {
   0%,
   100% {
