@@ -2,6 +2,7 @@
   display: grid;
   min-height: 100vh;
   align-items: flex-start;
+
   h1 {
     font-weight: 200;
     text-transform: uppercase;
@@ -11,13 +12,15 @@
     font-size: 2rem;
     margin-bottom: 1rem;
   }
+  .contact-section {
+    a {
+      color: #5f9ea0;
+    }
+  }
   &.dark {
     background-color: $text-dark-color;
     color: #fff;
     .contact-section {
-      a {
-        color: cadetblue;
-      }
       input {
         background-color: $site-medium-light-color;
       }
@@ -112,5 +115,28 @@ button[type="submit"] {
     font-size: 1.4rem;
     margin-left: 0.5rem;
     color: $text-medium-dark-color;
+  }
+  &:hover {
+    animation: bounce 2s ease-out infinite;
+  }
+}
+
+@keyframes fly {
+  0%,
+  100% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(20px, -2px);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
   }
 }

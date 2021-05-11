@@ -13,6 +13,12 @@ footer {
     a.social-link {
       color: $site-medium-light-color;
     }
+    .footer-message {
+      color: $text-dark-color;
+      &:hover {
+        color: $site-medium-light-color;
+      }
+    }
   }
   small {
     text-align: center;
@@ -48,13 +54,14 @@ footer {
   align-items: center;
   font-size: 1.6rem;
   color: $site-medium-light-color;
-  transition: color 0.6s ease-out;
+  transition: color 0.75s ease-out;
   &:hover {
     color: $text-dark-color;
     i {
       animation: scale 2s ease-out infinite;
     }
   }
+
   i {
     color: rebeccapurple;
     // box-shadow: 0 4px 5px inset;2    border-radius: 100%;
