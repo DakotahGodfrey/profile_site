@@ -7,6 +7,7 @@ import ProjectCard from "../../projectCard/ProjectCard";
 import underConstruction from "../../../assets/images/under_construction.png";
 import { useSelector } from "react-redux";
 import { selectPages } from "../pagesSlice";
+import reduxLogo from "../../../assets/images/redux_logo.svg";
 const Projects = () => {
   const projects = [
     {
@@ -15,6 +16,11 @@ const Projects = () => {
         "The Shoppies is my submission for the Shopify Frontend Internship challenge for Fall 2021. You can view it live @",
       projectImage: shoppies,
       projectLink: "https://the-shoppies-24f25.web.app.",
+      stack: [
+        { tech: "React", logo: "fab fa-react" },
+        { tech: "Redux", logo: "", logoSVG: reduxLogo },
+        { tech: "Scss", logo: "fab fa-sass" },
+      ],
     },
     {
       projectTitle: "IT-ticket Tracker",
@@ -22,6 +28,10 @@ const Projects = () => {
         "I.T Ticket Tracker was a project I built for an online course. It allows the user to add, remove and filter tickets and add and remove technicians. You can view the Repo @",
       projectImage: itTracker,
       projectLink: "https://github.com/DakotahGodfrey/it-log",
+      stack: [
+        { tech: "React", logo: "fab fa-react" },
+        { tech: "Redux", logo: "", logoSVG: reduxLogo },
+      ],
     },
     {
       projectTitle: "Under Construction",
@@ -29,6 +39,11 @@ const Projects = () => {
         "Right now I'm working on a reddit client built with React and Redux. You can follow along @  ",
       projectImage: underConstruction,
       projectLink: "https://github.com/DakotahGodfrey/react-reddit-client",
+      stack: [
+        { tech: "React", logo: "fab fa-react" },
+        { tech: "Redux", logo: "", logoSVG: reduxLogo },
+        { tech: "Scss", logo: "fab fa-sass" },
+      ],
     },
   ];
   useEffect(() => {

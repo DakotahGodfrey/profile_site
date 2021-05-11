@@ -28,8 +28,7 @@ const About = () => {
           <p className="bio">
             Prior to the Covid-19 epidemic I was working in the hospitality
             industry in Toronto. As work started to dry up, I began looking for
-            a change. So I dipped my toes into the coding world. Through
-            companies like{" "}
+            a change. I started with basic HTML and CSS. Through companies like{" "}
             <a
               className="shoutout"
               href="https://www.codecademy.com/"
@@ -38,7 +37,7 @@ const About = () => {
             >
               Codecademy
             </a>{" "}
-            and a plethora of online tutorials from amazing creators like{" "}
+            and a plethora of online tutorials from awesome creators like{" "}
             <a
               className="shoutout"
               href="https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA"
@@ -81,7 +80,7 @@ const About = () => {
           </p>
           <p className="bio">
             At the moment I'm looking to start an internship or a junior
-            developer, to continue to grow my skillset and gain experience.
+            developer role, to continue to grow my skillset and gain experience.
           </p>
           <p className="bio">
             Anyways that's me, if you'd like to get in touch please feel free to
