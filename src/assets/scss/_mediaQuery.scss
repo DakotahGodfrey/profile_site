@@ -1,8 +1,19 @@
 @media screen and (max-width: 780px) {
   footer {
+    display: grid;
+    grid-template-columns: 1fr;
     .footer-message {
       font-size: 10px;
       gap: 0.5rem;
+      display: none;
+
+      i {
+        font-size: 1rem;
+      }
+    }
+    ul {
+      justify-content: center;
+      border: none;
     }
   }
   .about-section {

@@ -15,6 +15,7 @@ footer {
     }
     .footer-message {
       color: $text-dark-color;
+      color: #555;
       &:hover {
         color: $site-medium-light-color;
       }
@@ -50,9 +51,9 @@ footer {
   justify-content: center;
 }
 .footer-message {
-  display: flex;
   align-items: center;
   font-size: 1.6rem;
+  display: flex;
   color: $site-medium-light-color;
   transition: color 0.75s ease-out;
   &:hover {
@@ -90,11 +91,12 @@ footer {
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
       -o-border-radius: 50%;
-      border-radius: 50%;
+      border-radius: 70% 20%;
       background-color: hsla(0, 0%, 100%, 0.247);
+      box-shadow: 0 1px 4px inset hsla(270, 50%, 60%, 0.7);
       top: 4px;
       left: 18px;
-      transform: rotate(140deg);
+      transform: rotate(130deg);
     }
   }
 }
