@@ -16,10 +16,11 @@ const Projects = () => {
         "The Shoppies is my submission for the Shopify Frontend Internship challenge for Fall 2021. You can view it live @",
       projectImage: shoppies,
       projectLink: "https://the-shoppies-24f25.web.app.",
+      repoLink: "https://github.com/DakotahGodfrey/shopify-intern-proj",
       stack: [
-        { tech: "React", logo: "fab fa-react", key: 0 },
+        { tech: "React", color: "#61DBFB", logo: "fab fa-react", key: 0 },
         { tech: "Redux", logo: "", logoSVG: reduxLogo, key: 1 },
-        { tech: "Scss", logo: "fab fa-sass", key: 2 },
+        { tech: "Scss", color: "#c69", logo: "fab fa-sass", key: 2 },
       ],
       key: "A",
     },
@@ -28,9 +29,9 @@ const Projects = () => {
       projectDescription:
         "I.T Ticket Tracker was a project I built for an online course. It allows the user to add, remove and filter tickets and add and remove technicians. You can view the Repo @",
       projectImage: itTracker,
-      projectLink: "https://github.com/DakotahGodfrey/it-log",
+      repoLink: "https://github.com/DakotahGodfrey/it-log",
       stack: [
-        { tech: "React", logo: "fab fa-react", key: "0" },
+        { tech: "React", color: "#61DBFB", logo: "fab fa-react", key: "0" },
         { tech: "Redux", logo: "", logoSVG: reduxLogo, key: "1" },
       ],
       key: "B",
@@ -40,11 +41,11 @@ const Projects = () => {
       projectDescription:
         "Right now I'm working on a reddit client built with React and Redux. You can follow along @  ",
       projectImage: underConstruction,
-      projectLink: "https://github.com/DakotahGodfrey/react-reddit-client",
+      repoLink: "https://github.com/DakotahGodfrey/react-reddit-client",
       stack: [
-        { tech: "React", logo: "fab fa-react", key: "0" },
+        { tech: "React", color: "#61DBFB", logo: "fab fa-react", key: "0" },
         { tech: "Redux", logo: "", logoSVG: reduxLogo, key: "1" },
-        { tech: "Scss", logo: "fab fa-sass", key: "2" },
+        { tech: "Scss", color: "#c69", logo: "fab fa-sass", key: "2" },
       ],
       key: "C",
     },

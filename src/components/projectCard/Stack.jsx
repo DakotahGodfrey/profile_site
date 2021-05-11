@@ -5,7 +5,7 @@ const Stack = ({ item }) => {
     <div className="tech">
       {item.tech}
       {item.logo ? (
-        <i className={item.logo}></i>
+        <i style={{ color: item.color }} className={item.logo}></i>
       ) : item.logoSVG ? (
         <div className="logoSvg">
           <img src={item.logoSVG} alt={item.tech} />
