@@ -17,10 +17,10 @@ const Home = () => {
       <section className="home-section">
         <article className="bio">
           <h1 className="bio-lead">Welcome,</h1>
-          <h3>
+          <h2>
             <span>👋🏻</span>
             Hey There, I'm Dakotah!{" "}
-          </h3>
+          </h2>
           <p className="bio">
             I'm a self-taught Front-End developer from Toronto. I'm passionate
             about accessible & responsive design. Lately, I've been working on
