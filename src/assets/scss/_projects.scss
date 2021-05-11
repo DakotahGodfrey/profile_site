@@ -1,44 +1,53 @@
 .main-project {
   display: grid;
-  min-height: 100vh;
+  grid-template-columns: 1fr;
   align-items: flex-start;
+  min-height: 100vh;
   &.dark {
     background-color: $text-dark-color;
-    color: #fff;
-    .project-section {
-      a {
-        color: cadetblue;
-      }
+    color: $site-medium-light-color;
+  }
+  .introduction {
+    padding: 2rem;
+    h1 {
+      font-weight: 200;
+      text-transform: uppercase;
+      padding: 1rem 0;
     }
   }
-}
-.project-section {
-  display: grid;
-  margin: 0 auto;
-  h3 {
-    font-weight: 300;
-    padding: 0.5rem 0;
-    border-bottom: $site-medium-light-color 2px solid;
-  }
-}
-.project-card {
-  max-width: 450px;
-  margin: 2rem;
-  border: $site-medium-light-color 2px solid;
-}
+  .project-section {
+    flex-wrap: wrap;
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    justify-content: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    a {
+      color: #5f9ea0;
+    }
+    .project-container {
+      display: grid;
+      gap: 2rem;
+    }
+    .project-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 0;
+      min-width: 33vh;
+      max-width: 100%;
 
-.project-card-image img {
-  object-fit: contain;
-  display: block;
-  width: 100%;
-}
-
-.project-card-image {
-  border-bottom: $site-medium-light-color 2px solid;
-}
-.project-card-content {
-  padding: 1rem;
-  p {
-    padding: 0.5rem;
+      .project-image {
+        width: 100%;
+      }
+      .project-content {
+        border: 1px solid;
+      }
+      .project-title {
+        margin: 1.5rem;
+      }
+      .project-desc {
+        padding: 0 1.5rem 1.5rem 1.5rem;
+      }
+    }
   }
 }

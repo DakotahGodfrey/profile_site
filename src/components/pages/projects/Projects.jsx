@@ -40,9 +40,19 @@ const Projects = () => {
     <main className={`main-project ${darkMode && "dark"}`}>
       <Navbar />
       <section className="project-section">
-        {projects.map((project) => (
-          <ProjectCard project={project} />
-        ))}
+        <header className="introduction">
+          <h1>My Projects</h1>
+          <p>
+            This is a collection of some of my recent projects. I'm still
+            actively refining some of them, and I'm always open to feedback if
+            you have any suggestions.{" "}
+          </p>
+        </header>
+        <section className="project-container">
+          {projects.map((project) => (
+            <ProjectCard project={project} />
+          ))}
+        </section>
       </section>
       <Footer />
     </main>

@@ -1,4 +1,4 @@
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 780px) {
   .about-section {
     .bio {
       padding: 0 1rem;
@@ -17,6 +17,37 @@
       .socials {
         border-top: $site-medium-light-color 2px solid;
         padding-top: 1.5rem;
+      }
+    }
+  }
+  .main-project {
+    .project-section {
+      grid-template-columns: 1fr;
+      .project-card {
+        grid-template-columns: 1fr;
+        padding: 0;
+        min-width: 33vh;
+        max-width: 100%;
+        .project-image {
+          border: none;
+          box-shadow: 0 6px 4px rgba($color: $text-dark-color, $alpha: 0.5);
+          width: 100%;
+        }
+        .project-title {
+          text-align: center;
+        }
+      }
+    }
+
+    &.dark {
+      .project-section {
+        .project-card {
+          .project-image {
+            box-shadow: 0 6px 4px
+              rgba($color: $site-medium-light-color, $alpha: 0.5);
+            width: 100%;
+          }
+        }
       }
     }
   }
