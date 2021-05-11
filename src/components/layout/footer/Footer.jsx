@@ -1,7 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { selectPages } from "../../pages/pagesSlice";
-import bmcSVG from "../../../assets/images/bmc.svg";
 const Footer = () => {
   const pages = useSelector(selectPages);
   const { darkMode } = pages;
