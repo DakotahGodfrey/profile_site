@@ -12,3 +12,8 @@ main {
   transition: color 0.5s ease-out, background-color 0.5s ease-out;
   padding: env(safe-area-inset);
 }
+
+.text-bold {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}

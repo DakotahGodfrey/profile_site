@@ -21,7 +21,7 @@ const ProjectCard = ({ project }) => {
         <div className="project-links">
           {projectLink && (
             <p>
-              Live Version:{" "}
+              <span className="text-bold">Live:</span>{" "}
               <a href={projectLink} target="blank" rel="noreferrer">
                 {projectLink}
               </a>
@@ -29,7 +29,7 @@ const ProjectCard = ({ project }) => {
           )}
           {repoLink && (
             <p>
-              Repo:{" "}
+              <span className="text-bold">Repo:</span>{" "}
               <a href={repoLink} target="blank" rel="noreferrer">
                 {repoLink}
               </a>
@@ -37,7 +37,7 @@ const ProjectCard = ({ project }) => {
           )}
         </div>
         <div className="project-stack">
-          Stack:
+          <span className="text-bold">Stack:</span>
           {stack
             ? stack.map((item) => <Stack item={item} key={item.key} />)
             : null}
