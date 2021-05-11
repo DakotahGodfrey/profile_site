@@ -69,3 +69,18 @@
     }
   }
 }
+
+@media (prefers-reduced-motion) {
+  .bio {
+    span {
+      animation: none;
+    }
+  }
+  footer {
+    .footer-message {
+      i {
+        animation: none;
+      }
+    }
+  }
+}

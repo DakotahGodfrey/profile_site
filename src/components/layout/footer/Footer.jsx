@@ -5,11 +5,11 @@ const Footer = () => {
   const pages = useSelector(selectPages);
   const { darkMode } = pages;
   return (
-    <footer className={darkMode && "dark"}>
+    <footer className={darkMode && "dark"} aria-label="footer">
       <span className="footer-message">
         Made with <i className="material-icons">favorite</i> by Dakotah Godfrey
       </span>
-      <ul>
+      <ul aria-label="footer links">
         <li>
           <a
             aria-label="linked in profile"

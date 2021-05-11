@@ -12,6 +12,10 @@ footer {
     color: $site-medium-light-color;
     a.social-link {
       color: $site-medium-light-color;
+      &:hover {
+        box-shadow: 0 4px 4px inset hsla(0, 0%, 0%, 0.2);
+        border-radius: 50%;
+      }
     }
     .footer-message {
       color: $text-dark-color;
@@ -49,6 +53,8 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: box-shadow 0.6s ease-out;
+  border-radius: 50%;
 }
 .footer-message {
   align-items: center;
@@ -112,4 +118,9 @@ img.logoSvg {
   50% {
     transform: scale(1.2);
   }
+}
+
+a.social-link:hover {
+  box-shadow: 0 4px 4px inset hsla(0, 0%, 20%, 0.8);
+  border-radius: 50%;
 }

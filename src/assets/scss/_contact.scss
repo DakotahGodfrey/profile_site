@@ -15,12 +15,30 @@
   .contact-section {
     a {
       color: #5f9ea0;
+      &:hover {
+        background-color: royalblue;
+        color: #eee;
+      }
+      &:focus {
+        @extend:hover;
+        outline: dashed #222;
+      }
     }
   }
   &.dark {
     background-color: $text-dark-color;
     color: #fff;
     .contact-section {
+      a {
+        &:hover {
+          background-color: royalblue;
+          color: #eee;
+        }
+        &:focus {
+          @extend:hover;
+          outline: dashed #fff;
+        }
+      }
       input {
         background-color: $site-medium-light-color;
       }
@@ -111,6 +129,10 @@ button[type="submit"] {
   border: 2px solid #d8d8d8;
   grid-row: 4;
   justify-self: flex-end;
+  &:focus {
+    @extend:hover;
+    outline: dashed #222;
+  }
   i {
     font-size: 1.4rem;
     margin-left: 0.5rem;

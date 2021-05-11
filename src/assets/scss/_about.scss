@@ -16,6 +16,10 @@
           background-color: royalblue;
           color: #eee;
         }
+        &:focus {
+          @extend:hover;
+          outline: dashed #fff;
+        }
       }
     }
   }

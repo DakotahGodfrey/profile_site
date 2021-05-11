@@ -23,7 +23,7 @@ const Contact = () => {
           </p>
         </div>
         <section className="contact-methods">
-          <form name="contact" method="POST">
+          <form name="contact" method="POST" aria-label="contact form">
             <input type="hidden" name="form-name" value="contact" />
             <div className="form-fields">
               <label htmlFor="name">Name</label>
@@ -50,22 +50,41 @@ const Contact = () => {
               <textarea name="message" id="message" required></textarea>
             </div>
             <button type="submit">
-              Send <i className="material-icons">send</i>
+              Send{" "}
+              <i aria-hidden className="material-icons">
+                send
+              </i>
             </button>
           </form>
-          <div className="socials">
+          <div
+            className="socials"
+            role="region"
+            aria-label="social media handles"
+          >
             <h3>Socials</h3>
             <ul>
               <li>
                 Twitter:{" "}
                 <span>
-                  <a href="https://www.twitter.com/dakotah_dev">@dakotah_dev</a>
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="twitter profile"
+                    href="https://www.twitter.com/dakotah_dev"
+                  >
+                    @dakotah_dev
+                  </a>
                 </span>
               </li>
               <li>
                 Github:{" "}
                 <span>
-                  <a href="https://www.github.com/DakotahGodfrey">
+                  <a
+                    target="_blank"
+                    aria-label="github profile"
+                    rel="noreferrer"
+                    href="https://www.github.com/DakotahGodfrey"
+                  >
                     @DakotahGodfrey
                   </a>
                 </span>
@@ -73,7 +92,12 @@ const Contact = () => {
               <li>
                 Linkedin:{" "}
                 <span>
-                  <a href="https://www.linkedin.com/in/dakotah-godfrey-2186091ab">
+                  <a
+                    target="_blank"
+                    aria-label="linked-in profile"
+                    rel="noreferrer"
+                    href="https://www.linkedin.com/in/dakotah-godfrey-2186091ab"
+                  >
                     @DakotahGodfrey
                   </a>
                 </span>

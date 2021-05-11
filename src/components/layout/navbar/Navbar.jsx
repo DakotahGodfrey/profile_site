@@ -10,7 +10,7 @@ const Navbar = () => {
   const handleClick = () => {
     dispatch(setDarkMode());
   };
-  console.log(pages);
+  const ariaLabel = `${darkMode ? "turn off dark mode" : "turn on dark mode"}`;
   return (
     <nav className={darkMode ? "dark" : ""}>
       <div className="logo">
@@ -33,7 +33,12 @@ const Navbar = () => {
           <Link to="/contact">Contact</Link>
         </li>
         <li>
-          <button onClick={handleClick} className="dark-mode-toggle">
+          <button
+            onClick={handleClick}
+            type="toggle"
+            aria-label={ariaLabel}
+            className="dark-mode-toggle"
+          >
             <i
               className={`material-icons light-mode ${darkMode ? "" : "fade"}`}
             >
