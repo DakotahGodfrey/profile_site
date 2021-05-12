@@ -22,7 +22,7 @@ const Home = () => {
             Hey There, I'm Dakotah!{" "}
           </h2>
           <p className="bio">
-            I'm a self-taught Front-End developer from Toronto. I'm passionate
+            I'm a self-taught frontend developer from Toronto. I'm passionate
             about accessible & responsive design. Lately, I've been working on
             designing interactive web apps using React.js and Redux. I'm
             currently open to new opportunities.
