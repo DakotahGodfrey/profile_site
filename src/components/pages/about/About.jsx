@@ -18,17 +18,17 @@ const About = () => {
           <h1 className="bio-lead">About Dakotah.</h1>
           <h3>Hey there!</h3>
           <p className="bio">
-            I'm Dakotah Godfrey, I'm a young community-taught web developer from
-            Canada. I'm new to the web development space, but it's quickly
-            become a passion. I've been focusing on building the foundational
-            skills needed to secure myself a job as a Frontend developer.
-            Lately, I've been trying my hand at building accessible and
-            beautiful web apps with React and Redux.
+            My name is Dakotah Godfrey. I am a community-taught web developer
+            from Ontario, Canada. I'm new to the web development space, but I’ve
+            become passionate about this field. I've focused on building the
+            foundational skills needed to secure a job as a frontend developer.
+            Lately, I've built accessible and beautiful web apps with React and
+            Redux.
           </p>
           <p className="bio">
             Before the Covid-19 epidemic, I was working in the hospitality
-            industry in Toronto. As work started to dry up, I began looking for
-            a change. I started with the basics of HTML and CSS. Through
+            industry in Toronto. As work became difficult to find, I looked for
+            a career change. I started with the basics of HTML and CSS. Through
             resources like{" "}
             <a
               className="shoutout"
@@ -65,27 +65,24 @@ const About = () => {
             >
               Self Teach Me
             </a>
-            , and many others I grew to really enjoy the web development
-            community.
+            , amongst many others, I began enjoying the challenge presented by
+            web development.
           </p>
           <p className="bio">
-            My Long term goal is to help make the tech community even more
-            accessible. I had always thought that a Computer Science or other
-            degree in <abbr title="Science Tech Engineering or Math">STEM</abbr>{" "}
-            was a pre-requisite for getting into development, and I've never
-            been so glad to be wrong. If I can reach a spot where I can give
-            back even a little, of what I've gained from the dev community and
-            help people grow in this space. I'll able be to chalk this journey
-            up as a success.
+            My long-term goal is to help make the tech community even more
+            accessible. If I can reach a spot where I can give back even a
+            little of what I've gained from the dev community and help people
+            grow in this space. I'll able be to chalk this journey up as a
+            success.
           </p>
           <p className="bio">
-            At the moment I'm looking to start an internship or a junior
-            developer role, to continue to grow my skill set and gain
+            At the moment I'm looking for a position as an intern or a junior
+            developer, to continue to grow my skill set with additional
             experience.
           </p>
           <p className="bio">
-            Anyways that's me, if you'd like to get in touch please feel free to
-            reach out. <Link to="/contact">Contact.</Link>
+            If you'd like to get in touch please feel free to reach out.{" "}
+            <Link to="/contact">Contact.</Link>
           </p>
         </article>
       </section>
