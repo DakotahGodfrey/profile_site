@@ -13,7 +13,7 @@ const Navbar = () => {
   const ariaLabel = `${darkMode ? "turn off dark mode" : "turn on dark mode"}`;
   return (
     <nav className={darkMode ? "dark" : ""}>
-      <Link to="/">
+      <Link className="logo-link" to="/">
         <div className="logo">
           <span>D | G</span>
         </div>
