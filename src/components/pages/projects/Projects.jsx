@@ -15,7 +15,7 @@ const Projects = () => {
       projectDescription:
         "The Shoppies is my submission for the Shopify Frontend Internship challenge for Fall 2021. You can view it live @",
       projectImage: shoppies,
-      projectLink: "https://the-shoppies-24f25.web.app.",
+      projectLink: "https://the-shoppies-24f25.web.app",
       repoLink: "https://github.com/DakotahGodfrey/shopify-intern-proj",
       stack: [
         { tech: "React", color: "#61DBFB", logo: "fab fa-react", key: 0 },
