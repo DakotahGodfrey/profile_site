@@ -5,11 +5,26 @@ import shoppies from "../../../assets/images/the_shoppies.png";
 import itTracker from "../../../assets/images/it_tracker.png";
 import ProjectCard from "../../projectCard/ProjectCard";
 import underConstruction from "../../../assets/images/under_construction.png";
+import redditCore from "../../../assets/images/reddit_app.png";
 import { useSelector } from "react-redux";
 import { selectPages } from "../pagesSlice";
 import reduxLogo from "../../../assets/images/redux_logo.svg";
 const Projects = () => {
   const projects = [
+    {
+      projectTitle: "Core for Reddit",
+      projectDescription:
+        "It's still a work in progress, but I've been working on a reddit client as part of a course on codecademy. It was a requirement to  build the project with react and redux. You can view it live @",
+      projectImage: redditCore,
+      projectLink: "https://modest-bassi-524857.netlify.app/",
+      repoLink: "https://github.com/DakotahGodfrey/react-reddit-client",
+      stack: [
+        { tech: "React", color: "#61DBFB", logo: "fab fa-react", key: "0" },
+        { tech: "Redux", logo: "", logoSVG: reduxLogo, key: "1" },
+        { tech: "Scss", color: "#c69", logo: "fab fa-sass", key: "2" },
+      ],
+      key: "A",
+    },
     {
       projectTitle: "The Shoppies: An Internship Project",
       projectDescription:
@@ -22,7 +37,7 @@ const Projects = () => {
         { tech: "Redux", logo: "", logoSVG: reduxLogo, key: 1 },
         { tech: "Scss", color: "#c69", logo: "fab fa-sass", key: 2 },
       ],
-      key: "A",
+      key: "B",
     },
     {
       projectTitle: "IT-ticket Tracker",
@@ -33,19 +48,6 @@ const Projects = () => {
       stack: [
         { tech: "React", color: "#61DBFB", logo: "fab fa-react", key: "0" },
         { tech: "Redux", logo: "", logoSVG: reduxLogo, key: "1" },
-      ],
-      key: "B",
-    },
-    {
-      projectTitle: "Under Construction",
-      projectDescription:
-        "Right now I'm working on a Reddit client built with React and Redux. You can follow along @  ",
-      projectImage: underConstruction,
-      repoLink: "https://github.com/DakotahGodfrey/react-reddit-client",
-      stack: [
-        { tech: "React", color: "#61DBFB", logo: "fab fa-react", key: "0" },
-        { tech: "Redux", logo: "", logoSVG: reduxLogo, key: "1" },
-        { tech: "Scss", color: "#c69", logo: "fab fa-sass", key: "2" },
       ],
       key: "C",
     },

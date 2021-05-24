@@ -6,6 +6,11 @@
   &.dark {
     background-color: $text-dark-color;
     color: $site-medium-light-color;
+    p {
+      a {
+        color: $link-dark-color;
+      }
+    }
   }
   .introduction {
     padding: 2rem;
