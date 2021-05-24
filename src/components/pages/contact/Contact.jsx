@@ -3,6 +3,7 @@ import Navbar from "../../layout/navbar/Navbar";
 import Footer from "../../layout/footer/Footer";
 import { useSelector } from "react-redux";
 import { selectPages } from "../pagesSlice";
+import Resume from "../../../assets/Dakotah_Godfrey_Resume.pdf";
 const Contact = () => {
   const pages = useSelector(selectPages);
   const { darkMode } = pages;
@@ -101,6 +102,19 @@ const Contact = () => {
                     @DakotahGodfrey
                   </a>
                 </span>
+              </li>
+              <li>
+                <a
+                  href={Resume}
+                  aria-label="download my resume"
+                  className="cta-link"
+                  download
+                >
+                  <i className="material-icons" aria-hidden="true">
+                    file_download
+                  </i>
+                  My Resume
+                </a>
               </li>
             </ul>
           </div>

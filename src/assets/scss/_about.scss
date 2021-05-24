@@ -10,7 +10,7 @@
     }
     .about-section {
       a {
-        color: cadetblue;
+        color: $link-dark-color;
         &:hover {
           background-color: royalblue;
           color: #eee;
