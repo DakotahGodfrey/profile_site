@@ -4,7 +4,7 @@ import Navbar from "../../layout/navbar/Navbar";
 import shoppies from "../../../assets/images/the_shoppies.png";
 import itTracker from "../../../assets/images/it_tracker.png";
 import ProjectCard from "../../projectCard/ProjectCard";
-import underConstruction from "../../../assets/images/under_construction.png";
+// import underConstruction from "../../../assets/images/under_construction.png";
 import redditCore from "../../../assets/images/reddit_app.png";
 import { useSelector } from "react-redux";
 import { selectPages } from "../pagesSlice";
