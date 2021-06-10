@@ -3,7 +3,7 @@ import Navbar from "../../layout/navbar/Navbar";
 import Footer from "../../layout/footer/Footer";
 import { useSelector } from "react-redux";
 import { selectPages } from "../pagesSlice";
-import Resume from "../../../assets/Dakotah_Godfrey_Resume.pdf";
+import Resume from "./Dakotah_Godfrey_Resume.pdf";
 const Contact = () => {
   const pages = useSelector(selectPages);
   const { darkMode } = pages;
